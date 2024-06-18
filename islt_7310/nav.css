@@ -1,5 +1,5 @@
 /* styling the navigation bar background, margin, and font; removing the list type */
-#nav_menu ul{
+nav ul{
     background-color: #14758f;
     margin-bottom: 15px;
     list-style-type: none;
@@ -7,7 +7,7 @@
 }
 
 /*styling the list item, setting width, aligning text, setting font-size */
-#nav_menu ul li {
+nav ul li {
     display: inline-block;
     border: 0px;
     width: 200px;
@@ -17,12 +17,12 @@
     }
 
 /*establishing the hover on navigation items */
-    #nav_menu li:hover{
+    nav li:hover{
         background-color: #3a8f14;
     }
 
 /* setting color and weight for links, removing the default underline on links */
-#nav_menu a {
+nav a {
         color: #ffffff;
         font-weight: bold;
         text-decoration: none;
