@@ -1,9 +1,11 @@
+
 /* styling the navigation bar background, margin, and font; removing the list type */
-nav ul{
+nav ul {
     background-color: #14758f;
     margin-bottom: 15px;
     list-style-type: none;
     font-family: Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
 }
 
 /*styling the list item, setting width, aligning text, setting font-size */
@@ -12,20 +14,31 @@ nav ul li {
     border: 0px;
     width: 200px;
     text-align: center;
-    padding:15px 15px 15px 25px;
+    padding: 15px 15px 15px 25px;
     font-size: 18px;
-    }
+}
 
 /*establishing the hover on navigation items */
-    nav li:hover{
-        background-color: #3a8f14;
-    }
+nav li:hover {
+    background-color: #3a8f14;
+}
 
 /* setting color and weight for links, removing the default underline on links */
 nav a {
-        color: #ffffff;
-        font-weight: bold;
-        text-decoration: none;
-        }
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
 
-   
+/* Styles for nested ul elements within list items */
+li>ul {
+    display: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+li:hover ul {
+    display: grid;
+    position: absolute;
+    background-color: #14758f;
+}
