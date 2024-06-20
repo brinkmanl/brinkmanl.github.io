@@ -1,4 +1,67 @@
+.delius-unicase-regular {
+    font-family: "Delius Unicase", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.delius-unicase-bold {
+    font-family: "Delius Unicase", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    margin: 0px;
+}
+
+main {
+    width: 90%;
+    margin: 20px;
+    padding: 10px;
+}
+
+header {
+    background-color: #999999;
+    margin: 0;
+}
+
+footer {
+    background-color: #999999;
+    text-align: center;
+}
+
+p {
+    padding-left: 15px;
+}
+
+main p {
+    text-indent: 1cm;
+}
+
+main p:nth-child(2) {
+    text-indent: 0cm;
+}
+
+main p:nth-child(2)::first-letter {
+    font-weight: bold;
+    font-size: 150%;
+}
+
 h1 {
     color: #006666;
-    }
-    
+    text-align: center;
+    padding: 20px 0 20px 0;
+    font-family: "Delius Unicase", cursive;
+}
+
+h2 {
+    margin: 20px;
+    color: #7c319d;
+    font-family: "Delius Unicase", cursive;
+}
+
+h3 {
+    margin: 20px;
+    color: #48150a;
+    font-family: "Delius Unicase", cursive;
+}

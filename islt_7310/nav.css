@@ -1,4 +1,3 @@
-
 /* styling the navigation bar background, margin, and font; removing the list type */
 nav ul {
     background-color: #14758f;
@@ -15,7 +14,7 @@ nav ul li {
     width: 200px;
     text-align: center;
     padding: 15px 15px 15px 25px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 /*establishing the hover on navigation items */
