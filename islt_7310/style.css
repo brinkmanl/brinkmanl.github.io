@@ -42,9 +42,6 @@ ul {
     list-style-type: none;
     font-size: 1.1em;
 }
-li{
-    padding: 5px;
-}
 
 li>ul {
     list-style-type: square;
