@@ -16,33 +16,41 @@
 
             Developed: June 20, 2024
 
-            Tested:  June 20, 2024; Passed on Firefox and Chrome browsers.
+           Updated: June 27, 2024
+
+            Tested:  June 27, 2024; Passed on Firefox and Chrome browsers.
 
             ******************************************************************************
 
             -->
 
             <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width,initial-scale=1">
             <title>Lora Brinkman</title>
             <link rel="stylesheet" href="style.css">
             <link rel="stylesheet" href="nav.css">
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&display=swap" rel="stylesheet">
+            <style>
+                main{width: 95%;}
+                aside{width: 0%;}
+            </style>
         </head>
 
 <body>
     <header>
-        <h1>Reflection</h1>
+        <h1>Lora Brinkman</h1>      
     </header>
 
     <nav>
+        <label id="hamburger">&#9776;</label>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="reflection.html">Reflection</a></li>
-            <li><a href="#projects.html">Projects</a>
-                <ul>
+            <li class="active"><a href="reflection.html">Reflection</a></li>
+            <li><a href="project.html">Projects</a>
+                <ul id="mobileHide">
                     <li><a href="#">Link 1</a></li>
                     <li><a href="#">Link 2</a></li>
                     <li><a href="#">Link 3</a></li>

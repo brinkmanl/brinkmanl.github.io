@@ -17,6 +17,7 @@ body {
 
 p {
     padding: 15px;
+    font-size: 1.1em;
 }
 
 h1 {
@@ -37,9 +38,12 @@ h3 {
 }
 
 ul {
-    padding-left: 15px;
+    padding: 15px;
     list-style-type: none;
     font-size: 1.1em;
+}
+li{
+    padding 5px;
 }
 
 li>ul {
@@ -54,9 +58,6 @@ header {
     margin: 0;
 }
 
-nav {
-    margin: 10px 0 10px 0;
-}
 
 main {
     float: left;
@@ -64,26 +65,27 @@ main {
     padding: 15px;
 }
 
-main p {
-    text-indent: 1cm;
-    font-size: 1.1em;
+main img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    width: 30%;
 }
-
-main p:nth-child(2) {
-    text-indent: 0cm;
-}
-
-main p:nth-child(2)::first-letter {
-    font-weight: bold;
-    font-size: 150%;
-}
-
 
 aside {
     float: right;
     width: 25%;
     padding: 15px;
 }
+
+aside img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
 
 footer {
     background-color: #999999;
@@ -97,16 +99,45 @@ footer {
     width: 60%;
   }
 
-  img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-  }
+  
+@media screen and (max-width: 350px) {
+
+    /* For mobile phones: */
+    main img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        width: 100%;
+    }
+    
+    
+    aside {
+        width: 100%;
+    }
+    
+    .youtube-video {
+        aspect-ratio: 16 / 9;
+        width: 100%;
+      }
+    
+     #mobileHide{
+        display: none;
+    }
+
+}
 
 @media screen and (max-width: 768px) {
 
-    /* For mobile phones: */
+    main img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        width: 50%;
+    }
     aside {
         width: 100%;
     }
@@ -115,18 +146,10 @@ footer {
         aspect-ratio: 16 / 9;
         width: 100%;
       }
-}
-
-@media screen and (max-width: 850px) {
-
-    aside {
-        width: 100%;
+      #mobileHide{
+        display: none;
     }
-    
-    .youtube-video {
-        aspect-ratio: 16 / 9;
-        width: 100%;
-      }
+
 }
 
 
