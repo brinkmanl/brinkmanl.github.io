@@ -1,43 +1,138 @@
-/* styling the navigation bar background, margin, and font; removing the list type */
-nav ul {
-    background-color: #14758f;
-    margin-bottom: 15px;
-    list-style-type: none;
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
-    position: relative;
+/*set the active page class to any <li> that has the class*/
+.active a:link {
+    background-color: #7c319d;
 }
 
-/*styling the list item, setting width, aligning text, setting font-size */
-nav ul li {
+#hamburger {
+    display: none;
+}
+
+/*format and position the main navigation menu*/
+nav {
+    margin: 10px 0 10px 0;
+    background: #14758f;
+    height:45px;
+    padding: 5px;
+    top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav>ul li {
+    position: relative;
+    /*we must add a position to our main navigation bar so we can position a drop-down properly */
     display: inline-block;
-    border: 0px;
-    width: 125px;
     text-align: center;
-    padding: 15px 15px 15px 25px;
+    font-weight: bold;
+    float: left;
     font-size: 16px;
 }
 
-/*establishing the hover on navigation items */
-nav li:hover {
+nav a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    width: 150px;
+    /*this is important to set so our drop-down doesn't go across the page*/
+    text-align: center;
+    margin: 2px;
+    border: 0px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/*format all navigation <a> elements*/
+nav a:link {
+    background-color: #14758f;
+}
+
+nav a:hover,
+nav a:focus {
     background-color: #3a8f14;
 }
 
-/* setting color and weight for links, removing the default underline on links */
-nav a {
-    color: #ffffff;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-/* Styles for nested ul elements within list items */
-nav li>ul {
-    display: none;
-    padding: 0;
-    margin-top: 15px;
-}
-
-nav li:hover ul {
-    display: grid;
-    position: absolute;
+nav a:active {
     background-color: #14758f;
+}
+
+/*position sub-menu or drop-down*/
+nav ul>li ul {
+    position: absolute;
+    top: 100%;
+    display: none;
+}
+
+nav ul ul li {
+    float: none;
+}
+
+/*special hover to display the drop-down*/
+nav>ul>li:hover>ul {
+    display: block;
+}
+
+@media only screen and (max-width: 640px) {
+    header {
+        position: relative;
+        height: 110px;
+        display: block;
+        background-color: cadetblue;
+        width: 100%;
+
+    }
+
+    #hamburger {
+        display: inline-block;
+        padding-left: 20px;
+        width: 26px;
+        float: left;
+        font-size: 2em;
+    }
+
+    nav ul,
+    nav:active ul {
+        display: none;
+        position: absolute;
+        padding: 10px 10px 10px 0px;
+        top: 130px;
+    }
+
+    nav:hover ul {
+        display: block;
+    }
+
+    nav:hover #mobileHide {
+        display: none;
+    }
+
+    nav li {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav>ul li {
+        text-align: left;
+        font-weight: bold;
+        float: left;
+    }
+
+    nav a {
+        text-decoration: none;
+        display: inline-block;
+        border-top: none;
+        border-bottom: none;
+        padding: 10px 0px 10px 10px;
+        width: 240px;
+        margin-bottom: 2px;
+    }
+
+    nav ul li ul {
+        display: none;
+    }
 }
