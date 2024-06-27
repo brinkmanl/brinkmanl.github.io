@@ -30,13 +30,13 @@ nav a {
 }
 
 /* Styles for nested ul elements within list items */
-li>ul {
+nav li>ul {
     display: none;
     padding: 0;
     margin-top: 15px;
 }
 
-li:hover ul {
+nav li:hover ul {
     display: grid;
     position: absolute;
     background-color: #14758f;
