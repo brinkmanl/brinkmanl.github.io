@@ -86,9 +86,14 @@ aside img {
 
 footer {
     background-color: #999999;
-    padding: 10px;
+    background: url('images/footerimage.jpg') no-repeat top center;
+    padding: 15px;
     text-align: center;
     clear: both;
+}
+
+footer img {
+    
 }
 
 .youtube-video {
