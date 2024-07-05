@@ -62,7 +62,7 @@ main {
     padding: 15px;
 }
 
-main img{
+main img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -82,7 +82,7 @@ aside img {
     margin-left: auto;
     margin-right: auto;
     width: 60%;
-  }
+}
 
 footer {
     background-color: #999999;
@@ -94,13 +94,13 @@ footer {
 .youtube-video {
     aspect-ratio: 16 / 9;
     width: 60%;
-  }
+}
 
-  
+
 @media screen and (max-width: 350px) {
 
     /* For mobile phones: */
-    main img{
+    main img {
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -108,18 +108,18 @@ footer {
         margin-top: 15px;
         width: 100%;
     }
-    
-    
+
+
     aside {
         width: 100%;
     }
-    
+
     .youtube-video {
         aspect-ratio: 16 / 9;
         width: 100%;
-      }
-    
-     #mobileHide{
+    }
+
+    #mobileHide {
         display: none;
     }
 
@@ -127,7 +127,7 @@ footer {
 
 @media screen and (max-width: 768px) {
 
-    main img{
+    main img {
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -135,16 +135,79 @@ footer {
         margin-top: 15px;
         width: 50%;
     }
+
     aside {
         width: 100%;
     }
-    
+
     .youtube-video {
         aspect-ratio: 16 / 9;
         width: 100%;
-      }
-      
+    }
+
 
 }
 
 
+@media print {
+    * {
+        background: transparent !important;
+        color: #000000 !important;
+
+    }
+
+    nav,
+    aside img,
+    .youtube-video,
+    hr {
+        display: none;
+    }
+
+    header {
+        height: 10pt;
+    }
+
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+
+    main {
+        width: 100%;
+        padding: 0;
+    }
+
+    footer {
+        width: 100%;
+        font-size: 8pt;
+    }
+
+    a::after {
+        content: " [" attr(href) "]";
+    }
+
+    @page {
+        margin: 1in;
+    }
+
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-size: 14pt;
+        margin: 0;
+        padding-top: 5pt;
+    }
+
+    p,
+    ul,
+    blockquote,
+    li>ul {
+        font-size: 10pt;
+        padding: 0;
+        margin: 0;
+        font-family: Georgia, 'Times New Roman', Times, serif !important;
+    }
+
+}
