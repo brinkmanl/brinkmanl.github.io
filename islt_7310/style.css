@@ -111,6 +111,30 @@ footer {
     width: 60%;
 }
 
+table {
+    border: 3px solid #7c319d;
+    
+}
+
+caption{
+        font-weight: bolder;
+    text-align: center;
+    font-size: 130%;
+    padding-bottom: .3em;
+}
+tbody tr:nth-child(even){
+    background-color: silver;
+}
+th, td {
+    padding: 0;
+    margin: 0;
+    
+}
+thead, tfoot {
+    background-color: #48150a;
+    color: #ffffff;
+    font-weight:500;
+}
 
 @media screen and (max-width: 350px) {
 
@@ -138,6 +162,23 @@ footer {
         display: none;
     }
 
+    th, td {
+        display: block;
+    }
+    thead{
+        display: none;
+    }
+    tr td:first-child {
+        font-weight: bold;
+        font-size: 110%;
+        background-color: silver;
+    }
+    tbody tr:nth-child(even){
+        background-color: #ffffff;
+    }
+    tfoot {
+        color: #000000;
+    }
 }
 
 @media screen and (max-width: 768px) {
